@@ -1,7 +1,9 @@
 $(window).load(function() {
-	$(".se-pre-con").fadeOut("slow");;
+	// Animate loader off screen
+	$("#loader").animate({
+		top: -200
+	}, 1500);
 });
-
 $(document).ready(function(){
 	var ul = document.querySelector('ul');
 	for (var i = ul.children.length; i >= 0; i--) {
