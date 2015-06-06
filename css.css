@@ -1,7 +1,4 @@
 
-body {
-	background-color: black;
-}
 h1 {
 	color: white;
 	text-align: center;
@@ -17,8 +14,7 @@ p {
 }
 
 .style1 {
-	background-color: black;
-	background: url(bg.png) no-repeat center center fixed;
+	background: #000 url(bg.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
