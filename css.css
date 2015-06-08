@@ -6,7 +6,11 @@ h1 {
 	color: white;
 	text-align: center;
 }
-
+img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 p {
 	color: white;
 	text-align: right;
@@ -29,6 +33,7 @@ p {
 	margin: 0 -15px;
 	margin-left: 107px;
 	margin-right: 161px;
+	margin-top: -20px;
 	list-style: none;
 
 	display: -webkit-box;
