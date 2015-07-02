@@ -8,7 +8,14 @@ h1 {
 }
 img {
 	height: 80px;
-
+position: relative;
+}
+.preimg{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	height: 300px;
+	top: 25%; 	
 }
 p {
 	color: white;
