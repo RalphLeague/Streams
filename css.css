@@ -8,9 +8,10 @@ h1 {
 }
 img {
 	height: 80px;
-position: relative;
+	position: relative;
 }
 .preimg{
+	
 	display: block;
 	margin-left: auto;
     margin-right: auto;
