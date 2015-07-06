@@ -11,23 +11,31 @@
 <body class="style1">
 	<a href="http://ralphleague.github.io/Streams" id="logo"><img src="bolstreams.png" ></a>
 	
+	<div class="onoffswitch">
+		<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="onoffswitch" checked>
+		<label class="onoffswitch-label" for="onoffswitch">
+			<span class="onoffswitch-inner"></span>
+			<span class="onoffswitch-switch"></span>
+		</label>
+	</div>
+	
 	<ul class="container">
-		<li class="panel"><a href="http://games.dailymotion.com/live/x2pznts"style="color:black">Ralphlol</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2pznts" allowfullscreen id="frameDemo"></iframe></li>
-		<li class="panel"><a href="http://games.dailymotion.com/live/x2qavys"style="color:black">Re0zz</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2qavys" allowfullscreen ></iframe></li>
-		<li class="panel"><a href="http://games.dailymotion.com/live/x2qavqf"style="color:black">MrXBOX52</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2qavqf" allowfullscreen ></iframe></li>
-		<li class="panel"><a href="http://games.dailymotion.com/live/x2r2ven"style="color:black">Big Fat Corki</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2r2ven" allowfullscreen ></iframe></li>
-		<li class="panel"><a href="http://games.dailymotion.com/live/mumuhey"style="color:black">MuMuHey</a><iframe frameborder="0" width="220" height="170" src="http://www.hitbox.tv/embed/mumuhey" frameborder="0" allowfullscreen ></iframe></li>
-		<li class="panel"><a href="http://games.dailymotion.com/live/x2pt13c"style="color:black">fukdapolice</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2pt13c" allowfullscreen ></iframe></li>
-		<li class="panel"><a href="http://games.dailymotion.com/live/x2vwr3u"style="color:black">iCreative</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2vwr3u" allowfullscreen ></iframe></li>
-		<li class="panel"><a href="http://games.dailymotion.com/live/x2pt0sm"style="color:black">Saltyboy</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2pt0sm" allowfullscreen ></iframe></li>	
-		<li class="panel"><a href="http://games.dailymotion.com/live/x2qy84e"style="color:black">TightBunghole</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2qy84e" allowfullscreen ></iframe></li>
-		<li class="panel"><a href="http://games.dailymotion.com/live/x2txvp2"style="color:black">Ashleybol</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2txvp2" allowfullscreen ></iframe></li>		
-		<li class="panel"><a href="http://games.dailymotion.com/live/x2u6dng"style="color:black">l0gic4</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2u6dng" allowfullscreen ></iframe></li>
-		<li class="panel"><a href="http://games.dailymotion.com/live/x2vblkk"style="color:black">SktGripex</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2vblkk" allowfullscreen ></iframe></li>	
-		<li class="panel"><a href="http://games.dailymotion.com/live/x2vprxe"style="color:black">Burn</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2vprxe" allowfullscreen ></iframe></li>	
-		<li class="panel"><a href="http://games.dailymotion.com/live/x2qokto"style="color:black">Fizz</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2qokto" allowfullscreen ></iframe></li>	
-		<li class="panel"><a href="http://games.dailymotion.com/live/x2w55nn"style="color:black">thcler</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2w55nn" allowfullscreen ></iframe></li>	
-		<li class="panel"><a href="http://games.dailymotion.com/live/x2wbw2t"style="color:black">Monotonoda</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2wbw2t" allowfullscreen ></iframe></li>			
+		<li class="panel" data-id='x2pznts'><a href="http://games.dailymotion.com/live/x2pznts"style="color:black">Ralphlol</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2pznts" allowfullscreen id="frameDemo"></iframe></li>
+		<li class="panel" data-id='x2qavys'><a href="http://games.dailymotion.com/live/x2qavys"style="color:black">Re0zz</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2qavys" allowfullscreen ></iframe></li>
+		<li class="panel" data-id='x2qavqf'><a href="http://games.dailymotion.com/live/x2qavqf"style="color:black">MrXBOX52</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2qavqf" allowfullscreen ></iframe></li>
+		<li class="panel" data-id='x2r2ven'><a href="http://games.dailymotion.com/live/x2r2ven"style="color:black">Big Fat Corki</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2r2ven" allowfullscreen ></iframe></li>
+		<!--<li class="panel" data-id='x2pznts'><a href="http://games.dailymotion.com/live/mumuhey"style="color:black">MuMuHey</a><iframe frameborder="0" width="220" height="170" src="http://www.hitbox.tv/embed/mumuhey" frameborder="0" allowfullscreen ></iframe></li>-->
+		<li class="panel" data-id='x2pt13c'><a href="http://games.dailymotion.com/live/x2pt13c"style="color:black">fukdapolice</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2pt13c" allowfullscreen ></iframe></li>
+		<li class="panel" data-id='x2vwr3u'><a href="http://games.dailymotion.com/live/x2vwr3u"style="color:black">iCreative</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2vwr3u" allowfullscreen ></iframe></li>
+		<li class="panel" data-id='x2pt0sm'><a href="http://games.dailymotion.com/live/x2pt0sm"style="color:black">Saltyboy</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2pt0sm" allowfullscreen ></iframe></li>	
+		<li class="panel" data-id='x2qy84e'><a href="http://games.dailymotion.com/live/x2qy84e"style="color:black">TightBunghole</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2qy84e" allowfullscreen ></iframe></li>
+		<li class="panel" data-id='x2txvp2'><a href="http://games.dailymotion.com/live/x2txvp2"style="color:black">Ashleybol</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2txvp2" allowfullscreen ></iframe></li>		
+		<li class="panel" data-id='x2u6dng'><a href="http://games.dailymotion.com/live/x2u6dng"style="color:black">l0gic4</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2u6dng" allowfullscreen ></iframe></li>
+		<li class="panel" data-id='x2vblkk'><a href="http://games.dailymotion.com/live/x2vblkk"style="color:black">SktGripex</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2vblkk" allowfullscreen ></iframe></li>	
+		<li class="panel" data-id='x2vprxe'><a href="http://games.dailymotion.com/live/x2vprxe"style="color:black">Burn</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2vprxe" allowfullscreen ></iframe></li>	
+		<li class="panel" data-id='x2qokto'><a href="http://games.dailymotion.com/live/x2qokto"style="color:black">Fizz</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2qokto" allowfullscreen ></iframe></li>	
+		<li class="panel" data-id='x2w55nn'><a href="http://games.dailymotion.com/live/x2w55nn"style="color:black">thcler</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2w55nn" allowfullscreen ></iframe></li>	
+		<li class="panel" data-id='x2wbw2t'><a href="http://games.dailymotion.com/live/x2wbw2t"style="color:black">Monotonoda</a><iframe frameborder="0" width="220" height="170" src="http://www.dailymotion.com/embed/video/x2wbw2t" allowfullscreen ></iframe></li>			
 	</ul>
 
 	<p>PM <a href="http://forum.botoflegends.com/user/89149-" style="color:green" id="name">Ralphlol</a> to get</br>your stream added.</p>
