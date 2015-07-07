@@ -15,38 +15,49 @@ $(document).ready(function(){
 	$('.panel').each(function(index, item){
 		ajax($(item).data('id'), item, true);
 	});
-	if (found == false) {
-		$("#found").html("<h1>No Streams Currently Live</h1>");
-	}
 	var clicked = 0;
 	$("#onoffswitch").click(function(){
 		if (clicked == 0){
 			$('.panel').each(function(index, current){
 				$(current).show();
 			});
+			$("#found").hide();
 			clicked = 1;
 		} else {
 			$('.panel').each(function(index, item){
 				ajax($(item).data('id'), item, false);
 			});
+			setTimeout(function() {
+				if (found == false) {
+					$("#found").html("<h1>No Streams Currently Live</h1>");
+					$("#found").fadeIn(2000);
+				}
+			 }, 1000);
 			clicked = 0;
 		}
 	});
+
+	setTimeout(function() {
+		if (found == false) {
+			$("#found").html("<h1>No Streams Currently Live</h1>");
+			$("#found").fadeIn(2000);
+		}
+     }, 2000);
+	 
+	function ajax(id, current, show){
+		$.ajax({
+			type:     "GET",
+			url:      "https://api.dailymotion.com/video/"+id+"?fields=onair",
+			dataType: "jsonp",
+			success: function(data, id){
+				if (data.onair == true && show == true){
+					$(current).show();
+					found = true;
+				} else if (data.onair == false && show == false){
+					$(current).hide();
+				}
+			}
+		});
+	}
 });
 
-function ajax(id, current, show){
-	$.ajax({
-		type:     "GET",
-		url:      "https://api.dailymotion.com/video/"+id+"?fields=onair",
-		dataType: "jsonp",
-		success: function(data){
-			if (data.onair == true && show == true){
-				$(current).show();
-				var found = true;
-			} else if (data.onair == false && show == false){
-				$(current).hide();
-				var found = true;
-			}
-		}
-	});
-}
