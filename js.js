@@ -15,7 +15,7 @@ $(document).ready(function(){
 	$('.panel').each(function(index, item){
 		ajax($(item).data('id'), item, true);
 	});
-	if (found = false) {
+	if (found == false) {
 		$("#found").html("<h1>No Streams Currently Live</h1>");
 	}
 	var clicked = 0;
@@ -36,17 +36,17 @@ $(document).ready(function(){
 
 function ajax(id, current, show){
 	$.ajax({
-	  type:     "GET",
-	  url:      "https://api.dailymotion.com/video/"+id+"?fields=onair",
-	  dataType: "jsonp",
-	  success: function(data){
-		if (data.onair == true && show == true){
-			$(current).show();
-			var found = true;
-		} else if (data.onair == false && show == false){
-			$(current).hide();
-			var found = true;
+		type:     "GET",
+		url:      "https://api.dailymotion.com/video/"+id+"?fields=onair",
+		dataType: "jsonp",
+		success: function(data){
+			if (data.onair == true && show == true){
+				$(current).show();
+				var found = true;
+			} else if (data.onair == false && show == false){
+				$(current).hide();
+				var found = true;
+			}
 		}
-	  }
 	});
 }
