@@ -6,17 +6,20 @@ h1 {
 	color: white;
 	text-align: center;
 }
-img {
+#img1 {
 	height: 80px;
-	position: relative;
+	position: fixed;
+	top: 2%;
+}
+#found {
+	margin-top: 8%;
 }
 .preimg{
-	
-	display: block;
-	margin-left: auto;
-    margin-right: auto;
-	height: 300px;
-	top: 25%; 	
+	display: block !important;
+	margin-top: 10%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+	height: 300px !important; 	
 }
 p {
 	color: white;
@@ -40,7 +43,7 @@ p {
 	margin: 0 -15px;
 	margin-left: 107px;
 	margin-right: 161px;
-	margin-top: -20px;
+	margin-top: 40px;
 	list-style: none;
 
 	display: -webkit-box;
@@ -82,7 +85,8 @@ p {
 }
 
 .onoffswitch {
-    position: relative; width: 139px;
+	top: 12%;
+    position: fixed; width: 139px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
 .onoffswitch-checkbox {

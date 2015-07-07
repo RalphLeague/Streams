@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$("#found").hide();
 	var found = false;
 	$.ajaxSetup({ cache: false });
 	
