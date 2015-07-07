@@ -18,10 +18,10 @@ $(document).ready(function(){
 	var clicked = 0;
 	$("#onoffswitch").click(function(){
 		if (clicked == 0){
-			$('.panel').each(function(index, current){
-				$(current).show();
-			});
 			$("#found").hide();
+			$('.panel').each(function(index, item){
+				ajax($(item).data('id'), item, false, true);
+			});
 			clicked = 1;
 		} else {
 			$('.panel').each(function(index, item){
@@ -44,7 +44,7 @@ $(document).ready(function(){
 		}
      }, 2000);
 	 
-	function ajax(id, current, show){
+	function ajax(id, current, show, reverse){
 		$.ajax({
 			type:     "GET",
 			url:      "https://api.dailymotion.com/video/"+id+"?fields=onair",
@@ -55,6 +55,9 @@ $(document).ready(function(){
 					found = true;
 				} else if (data.onair == false && show == false){
 					$(current).hide();
+				}
+				if (reverse) {
+					$(current).show();
 				}
 			}
 		});
