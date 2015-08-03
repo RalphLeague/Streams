@@ -43,7 +43,7 @@ $(document).ready(function(){
 			$("#found").html("<h1>No Streams Currently Live</h1>");
 			$("#found").fadeIn(2000);
 		}
-     }, 2200);
+     }, 1800);
 	 
 	function ajax(id, current, show, reverse){
 		$.ajax({
