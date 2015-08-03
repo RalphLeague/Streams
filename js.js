@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	//$("#found").hide();
+	$("#found").hide();
 	var found = false;
 	$.ajaxSetup({ cache: false });
 	console.log("f4")
@@ -9,6 +9,9 @@ $(document).ready(function(){
 	
 	setTimeout(function() {
 		$(".se-pre-con").css('opacity','0');
+		setTimeout(function() {
+			$(".se-pre-con").hide();
+		}, 2000);	
      }, 1500);
 	
 	var ul = document.querySelector('ul');
@@ -51,6 +54,7 @@ $(document).ready(function(){
 	setTimeout(function() {
 		if (found == false) {
 			$("#found").html("<h1>No Streams Currently Live</h1>");
+			$("#found").show();
 			//$("#found").fadeIn(2000);
 			$("#found").css('opacity','1');
 			$(".se-pre-con").hide();
