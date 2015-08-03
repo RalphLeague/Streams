@@ -7,7 +7,7 @@ $(document).ready(function(){
 		$(current).hide();
 	});
 	
-	$(".se-pre-con").delay(600).fadeOut(1500);
+	$(".se-pre-con").delay(800).fadeOut(1500);
 	var ul = document.querySelector('ul');
 	for (var i = ul.children.length; i >= 0; i--) {
 		ul.appendChild(ul.children[Math.random() * i | 0]);
@@ -43,7 +43,7 @@ $(document).ready(function(){
 			$("#found").html("<h1>No Streams Currently Live</h1>");
 			$("#found").fadeIn(2000);
 		}
-     }, 2000);
+     }, 2200);
 	 
 	function ajax(id, current, show, reverse){
 		$.ajax({
