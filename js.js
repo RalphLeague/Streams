@@ -1,13 +1,16 @@
 $(document).ready(function(){
-	$("#found").hide();
+	//$("#found").hide();
 	var found = false;
 	$.ajaxSetup({ cache: false });
-	
+	console.log("f4")
 	$('.panel').each(function(index, current){
 		$(current).hide();
 	});
 	
-	$(".se-pre-con").delay(800).fadeOut(1500);
+	setTimeout(function() {
+		$(".se-pre-con").css('opacity','0');
+     }, 1500);
+	
 	var ul = document.querySelector('ul');
 	for (var i = ul.children.length; i >= 0; i--) {
 		ul.appendChild(ul.children[Math.random() * i | 0]);
@@ -17,9 +20,12 @@ $(document).ready(function(){
 		ajax($(item).data('id'), item, true);
 	});
 	var clicked = 0;
+	console.log("f44")
 	$("#onoffswitch").click(function(){
 		if (clicked == 0){
+			console.log("f")
 			$("#found").hide();
+		//	$("#found").css('opacity','0');
 			$('.panel').each(function(index, item){
 				ajax($(item).data('id'), item, false, true);
 			});
@@ -31,9 +37,13 @@ $(document).ready(function(){
 			setTimeout(function() {
 				if (found == false) {
 					$("#found").html("<h1>No Streams Currently Live</h1>");
-					$("#found").fadeIn(2000);
+					setTimeout(function() {
+					//$("#found").fadeIn(2000);
+						$("#found").show();
+						$("#found").css('opacity','1');
+					}, 100);
 				}
-			 }, 1000);
+			 }, 600);
 			clicked = 0;
 		}
 	});
@@ -41,9 +51,11 @@ $(document).ready(function(){
 	setTimeout(function() {
 		if (found == false) {
 			$("#found").html("<h1>No Streams Currently Live</h1>");
-			$("#found").fadeIn(2000);
+			//$("#found").fadeIn(2000);
+			$("#found").css('opacity','1');
+			$(".se-pre-con").hide();
 		}
-     }, 1800);
+     }, 2600);
 	 
 	function ajax(id, current, show, reverse){
 		$.ajax({
@@ -63,5 +75,6 @@ $(document).ready(function(){
 			}
 		});
 	}
+	console.log("f445")
 });
 

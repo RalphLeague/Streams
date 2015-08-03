@@ -13,6 +13,15 @@ h1 {
 }
 #found {
 	margin-top: 8%;
+	opacity: 0;
+	transition: opacity 1.5s ease-in-out;
+   -moz-transition: opacity 1.5s ease-in-out;
+   -webkit-transition: opacity 1.5s ease-in-out;
+   -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0);
 }
 .preimg{
 	display: block !important;
@@ -82,6 +91,15 @@ p {
 	height: 100%;
 	z-index: 99999;
 	background: center no-repeat black;
+	-webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0);
+	opacity: 1;
+	transition: opacity 2.5s ease-in-out;
+   -moz-transition: opacity 2.5s ease-in-out;
+   -webkit-transition: opacity 2.5s ease-in-out;
 }
 
 .onoffswitch {
