@@ -7,12 +7,7 @@ $(document).ready(function(){
 		$(current).hide();
 	});
 	
-	setTimeout(function() {
-		setTimeout(function() {
-			$(".se-pre-con").fadeOut(2200);
-		}, 1000);	
-     }, 4000);
-	
+
 	var ul = document.querySelector('ul');
 	for (var i = ul.children.length; i >= 0; i--) {
 		ul.appendChild(ul.children[Math.random() * i | 0]);
