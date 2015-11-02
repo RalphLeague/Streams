@@ -8,11 +8,10 @@ $(document).ready(function(){
 	});
 	
 	setTimeout(function() {
-		$(".se-pre-con").css('opacity','0');
 		setTimeout(function() {
-			$(".se-pre-con").hide();
-		}, 2000);	
-     }, 3500);
+			$(".se-pre-con").fadeIn(2200);
+		}, 1000);	
+     }, 4000);
 	
 	var ul = document.querySelector('ul');
 	for (var i = ul.children.length; i >= 0; i--) {
