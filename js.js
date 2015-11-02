@@ -12,7 +12,7 @@ $(document).ready(function(){
 		setTimeout(function() {
 			$(".se-pre-con").hide();
 		}, 2000);	
-     }, 1500);
+     }, 3500);
 	
 	var ul = document.querySelector('ul');
 	for (var i = ul.children.length; i >= 0; i--) {
@@ -46,20 +46,21 @@ $(document).ready(function(){
 						$("#found").css('opacity','1');
 					}, 100);
 				}
-			 }, 600);
+			 }, 200);
 			clicked = 0;
 		}
 	});
 
 	setTimeout(function() {
 		if (found == false) {
+			$(".se-pre-con").hide();
 			$("#found").html("<h1>No Streams Currently Live</h1>");
 			$("#found").show();
 			//$("#found").fadeIn(2000);
 			$("#found").css('opacity','1');
-			$(".se-pre-con").hide();
+			
 		}
-     }, 2600);
+     }, 2200);
 	 
 	function ajax(id, current, show, reverse){
 		$.ajax({
