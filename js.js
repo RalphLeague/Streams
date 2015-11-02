@@ -9,7 +9,7 @@ $(document).ready(function(){
 	
 	setTimeout(function() {
 		setTimeout(function() {
-			$(".se-pre-con").fadeIn(2200);
+			$(".se-pre-con").fadeOut(2200);
 		}, 1000);	
      }, 4000);
 	
